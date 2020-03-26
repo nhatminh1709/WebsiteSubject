@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chuong 3-Bai 5-Trang 84</title>
+</head>
+<body>
+<style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  positon: relative;
+
+}
+form{
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 10px 10px #cccccc;
+  font-family: courier;
+  border-radius: 5px;
+}
+
+form ul li{
+  list-style-type: none;
+  margin: 10px 0px;
+}
+
+input[type="text"]{
+  width: 250px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 8px;
+  outline: none;
+  text-align: center
+}
+
+#convertTo{
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 8px;
+  outline: none;
+}
+h2{
+  margin: 20px;
+}
+p{
+  margin-right: 100px;
+  margin-bottom: 5px;
+}
+
+</style>
+<body>
+<script>
+function convert(){
+  let r = document.getElementById("input");
+  let sl = document.getElementById("convertTo");
+  if(r.value === ""){
+      alert("Nhap n vao");
+      sl.value = "first";
+    } else{
+      if(sl.value == "rad"){
+      document.getElementById("sin").value = Math.sin(r.value) + " (rad) ";
+      document.getElementById("cos").value = Math.cos(r.value) + " (rad) ";
+      document.getElementById("tan").value = Math.sin(r.value)/Math.cos(r.value) + " (rad) ";
+    } else{
+      document.getElementById("sin").value = Math.sin(r.value*Math.PI/180).toFixed(5) + " (deg) ";
+      document.getElementById("cos").value = Math.cos(r.value*Math.PI/180).toFixed(5) + " (deg) ";
+      document.getElementById("tan").value = Math.tan(r.value*Math.PI/180).toFixed(5)  + " (deg) ";
+    }
+  }
+  
+}
+</script>
+<form>
+    <h2>Convert to</h2>
+    <p>Input n</p>
+    <input type="text" id="input">
+    <select name="" id="convertTo" onchange="convert()">
+      <option value="first">Convert to</option>
+      <option value="rad">Radian</option>
+      <option value="deg">Degree</option>
+    </select>
+    <h2>Result as</h2>
+    <ul>
+      <li>Sin: <input type="text" id="sin"></li>
+      <li>Cos: <input type="text" id="cos"></li>
+      <li>Tan: <input type="text" id="tan"></li>
+    </ul>
+  </form>
+  </body>
+  </html>
