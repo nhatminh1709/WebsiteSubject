@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 3 - Question 7 - Page 84</title>
+
+  </head>
+  <body>
+    <script src="c3q7p84.js">
+
+    </script>
+    <form class="log" action="index.html" method="post">
+      <h2>ĐĂNG KÝ TÀI KHOẢN (HỆ THỐNG)</h2>
+      <ul>
+        <li><label for="userName">User name: </label><input onkeyup="GetUser()" id="userName" type="text" placeholder="Your user name"><p id="r0" style="display: none;"></p></li>
+        <li><label for="passwd">Password: </label><input onkeyup="GetPas()" id="passwd" type="password" placeholder="Your password" maxlength="16"><p id="r1" style="display: none;"></p></li>
+        <li><label for="conf">Confirm: </label><input onkeyup="GetConf()" id="conf" type="password" placeholder="Confirm password"><p id="r2" style="display: none;"></p></li>
+        <li><label for="lastName">Last name: </label><input type="text" id="lastName" placeholder="Your last name"></li>
+        <li><label for="name">Your name: </label><input type="text" id="name" placeholder="Your name"></li>
+        <li><label for="email">Email: </label><input type="text" id="email" placeholder="example@mail.com"></li>
+        <li><label for="tel">Phone: </label><input type="text" id="tel" placeholder="ex: 012345678" maxlength="12"></li>
+        <li><button onclick="getfun()">Creat</button></li>
+      </ul>
+    </form>
+  </body>
+</html>
