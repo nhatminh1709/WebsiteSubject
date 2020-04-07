@@ -12,7 +12,7 @@ function GetUser(){
         getUsn.style.outline = "1px solid red";
         document.getElementById("r0").style.color = "red";
         document.getElementById("r0").style.display = "block";
-         document.getElementById("r0").innerHTML = "Khong duoc co khoang trong"
+        document.getElementById("r0").innerHTML = "Khong duoc co khoang trong"
       }
     }
   }
@@ -24,6 +24,7 @@ function GetPas(){
     document.getElementById("r1").style.display= "none";
   } else if(getpwd.value.length<8){
     document.getElementById("r1").style.display= "block";
+    document.getElementById("r1").style.color = "red";
     document.getElementById("r1").innerHTML = "Mat khau qua ngan";
   } else{
       document.getElementById("r1").style.display= "none";
@@ -37,8 +38,23 @@ function GetConf(){
     document.getElementById("r2").style.display= "none";
   } else if(getCon.value!=getpwd.value){
     document.getElementById("r2").style.display= "block";
+    document.getElementById("r2").style.color = "red";
     document.getElementById("r2").innerHTML = "Mat khau khong trung hop";
+
   }else{
       document.getElementById("r2").style.display= "none";
   }
+}
+
+function checkPhone() {
+   var num = document.getElementById("tel");
+  if(num.value.length<12){
+    alert("So dien thoai khong hop le");
+  } else if(num.value.charAt(0)!=0){
+    alert("So dien thoai khong hop le");
+  }
+}
+
+function submit_data(){
+
 }
