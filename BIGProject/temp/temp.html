@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    *{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.header{
+width:800px;
+background: red;
+height: 100px;
+position: relative;
+margin: auto;
+
+}
+#logo{
+font-size: 20px;
+text-align: center;
+background: green;
+width: 200px;
+justify-content: center;
+position: absolute;
+top: 50%;
+transform: translate(100px,-50%);
+line-height: auto;
+}
+
+.sign{
+display: block;
+background: green;
+
+}
+
+.sign ul{
+float: right;
+position: absolute;
+top: 50%;
+right: 10%;
+transform: translate(50%,-50%);
+
+}
+.sign ul li{
+display: inline-block;
+background: grey;
+font-size: 18px;
+margin: 0 5px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="header">
+  <div id="logo">
+    <h1><span>printemps</span></h1>
+
+  </div>
+  <div class="sign">
+      <ul>
+        <li>sign</li>
+        <li>sign in</li>
+      </ul>
+    </div>
+</div>
+  </body>
+</html>

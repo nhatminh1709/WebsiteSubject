@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 1300px;
+  height: 700px;
+  background: gray;
+  margin: auto;
+}
+
+header{
+
+  background: black;
+  height: 100px;
+  position: relative;
+}
+
+header #logo{
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* justify-content: flex-end, center; */
+  position: absolute;
+  top: 50%;
+  transform: translate(100px,-50%);
+}
+header #logo h1{
+  font-family: 'Satisfy', cursive ;
+  color: white;
+  padding: 0 5px;
+}
+header .sign-option{
+  display: block;
+}
+header .sign-option ul{
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0,-50%);
+}
+header .sign-option ul li{
+  display: inline-block;
+}
+header .sign-option ul li a{
+  display: block;
+  padding: 5px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: Helvetica;
+}
+header #s-up{
+  border: 2px solid white;
+  border-radius: 8px;
+}
+header #s-up:hover{
+  border: 2px solid green;
+}
+
+nav{
+  width: 1300px;
+  height: 50px;
+  background: red;
+  line-height: 50px;
+}
+nav .toolnavgt{
+  /* tool navigaton */
+  width: 800px;
+  /* background: yellow; */
+  margin: 0 auto;
+  text-align: center;
+}
+nav .toolnavgt ul li{
+  display: inline-flex;
+  list-style-type: none;
+}
+
+nav .toolnavgt ul li a{
+  text-decoration: none;
+  padding: 0 10px;
+  /* margin:  0 5px; */
+  color: black;
+}
+
+nav .toolnavgt ul li a:hover{
+  background: white;
+}
