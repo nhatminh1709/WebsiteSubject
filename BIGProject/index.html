@@ -7,34 +7,75 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <script src="script/script.js">
+
+    </script>
     <div class="wrapper">
       <header>
         <div id="logo">
-          <h1><span>printemps</span></h1>
+          <h1 id="printemps" title="logo"><span>printemps</span></h1>
         </div>
         <div class="sign-option">
           <ul>
-            <li><a id="s-up" href="#"><i class="fa fa-user-plus" style="font-size: 15px;">&nbsp</i>SIGN UP</a></li>
-            <li><a href="#">SIGN IN</a></li>
+            <li><a id="s-up" href="#" title="sign up"><i class="fa fa-user-plus" style="font-size: 15px;">&nbsp</i>SIGN UP</a></li>
+            <li><a id="s-in" href="#" title="sign in"><i class="fa fa-user" style="font-size: 16px;">&nbsp</i>SIGN IN</a></li>
           </ul>
         </div>
       </header>
       <nav>
         <div class="toolnavgt">
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">OPTION 1</a></li>
-            <li><a href="#">OPTION 2</a></li>
-            <li><a href="#">OPTION 3</a></li>
-            <li><a href="#">OPTION 4</a></li>
+            <li><a href="#" title="home">HOME</a></li>
+            <li><a href="#" title="option1">OPTION 1</a></li>
+            <li><a href="#" title="option2">OPTION 2</a></li>
+            <li><a href="#" title="option3">OPTION 3</a></li>
+            <li><a href="#" title="option4">OPTION 4</a></li>
           </ul>
         </div>
       </nav>
-      <section>
+      <div class="content-main">
+        <div class="ads">
+          <div class="ads1">
+            <button type="button" name="button" class="close-btn-ads">x</button>
+            <img class="imgAds" src="./img/unitop.png" alt="" width="120" height="350">
+          </div>
+        </div>
+        <article class="slide-show">
+          <img src="./img/pnj0.jpg" alt="" height="400px" width="1000px" id="slideshow" >
+          <button type="button" name="btnL" title="prev" class="btn btn-left">&lt</button>
+          <button type="button" name="btnR" title="next" class="btn btn-right">&gt</button>
+        </article>
+        <div class="ads">
+          <div class="ads1">
+            <button type="button" name="button" class="close-btn-ads">x</button>
+            <img class="imgAds" src="./img/unitop.png" alt="" width="120" height="350">
+          </div>
+          <script>
+            var closeAds = document.getElementsByClassName("close-btn-ads");
+            var imgAds = document.getElementsByClassName("imgAds");
+            for (var i = 0; i < closeAds.length; i++) {
+              closeAds[i].onclick=function() {
+                imgAds[0].style.display = "none";
 
-      </section>
+              };
+            }
+          </script>
+        </div>
+        <!-- cho nay chua script -->
+
+        <!-- cho nay chua script -->
+        <div class="clear"></div>
+        <div class="grid-product">
+          <div class="grid-new-product">
+            <h2 class"title">SAN PHAM NOI BAT</h2>
+
+          </div>
+        </div>
+      </div>
+
+
       <footer>
-
+        <h1>FOOTER</h1>
       </footer>
     </div>
   </body>
